@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+	--color-navy: #0f0f0f;
+	--color-navy-light: #1a1a1a;
+	--color-navy-lighter: #2a2a2a;
+	--color-slate: #888888;
+	--color-slate-light: #aaaaaa;
+	--color-slate-lightest: #d4d4d4;
+	--color-offwhite: #f0f0f0;
+	--color-green: #f97316;
+	--color-green-dim: rgba(249, 115, 22, 0.1);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #0f0f0f;
+	color: #888888;
+	font-family: var(--font-sans);
+	line-height: 1.6;
+}
+
+::selection {
+	background-color: rgba(249, 115, 22, 0.2);
+	color: #d4d4d4;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+	background: #2a2a2a;
+	border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #f97316;
+}
+
+/* Scroll reveal */
+.reveal {
+	opacity: 0;
+	transform: translateY(24px);
+	transition:
+		opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+		transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Section headings */
+.section-heading {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	color: #f97316;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	margin-bottom: 2.5rem;
+}
+.section-heading::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: #2a2a2a;
+}
+
+/* Accent button */
+.btn-green {
+	display: inline-block;
+	padding: 0.75rem 1.75rem;
+	border: 1px solid #f97316;
+	border-radius: 4px;
+	color: #f97316;
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	text-decoration: none;
+	transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-green:hover {
+	background: rgba(249, 115, 22, 0.08);
+	box-shadow: 0 0 20px rgba(249, 115, 22, 0.12);
+}

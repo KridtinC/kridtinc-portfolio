@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npx sv *)",
+      "Bash(npm --version)",
+      "Bash(npx sv@0.6 create . --template minimal --types ts --no-add-ons)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch(domain:ewan-kerboas.fr)",
+      "WebFetch(domain:brittanychiang.com)",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(npx wrangler *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
