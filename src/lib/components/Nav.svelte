@@ -37,7 +37,7 @@
 	style="background: rgba(15,15,15,0.9); backdrop-filter: blur(8px);"
 >
 	<button
-		class="font-mono text-sm text-green-400 tracking-widest"
+		class="font-mono text-sm text-green tracking-widest"
 		onclick={() => scrollTo('hero')}
 	>
 		KC
