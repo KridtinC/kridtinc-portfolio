@@ -120,15 +120,16 @@ export const skills = {
 
 export const projects = [
 	{
-		id: 'prokedex-web',
+		id: 'pocketdex',
 		num: '01',
-		name: 'Prokedex Web',
+		name: 'Pocketdex',
 		description:
-			'A TypeScript Pokédex web application that fetches live data from the PokéAPI. Built to explore frontend architecture patterns and REST API integration.',
-		stack: ['TypeScript', 'React', 'PokéAPI'],
-		url: 'https://github.com/KridtinC/prokedex-web',
+			'Full-stack Pokédex covering all 1025 Pokémon. Built with Next.js 14, Go backend, and MongoDB. Features team builder, type matchup calculator, and regional dex filters.',
+		stack: ['Next.js 14', 'Go', 'MongoDB', 'TypeScript'],
+		url: 'https://github.com/KridtinC/pocketbase',
 		hasDemo: true,
-		demoType: 'prokedex'
+		demoType: 'iframe',
+		demoUrl: 'https://pocketbase.pages.dev/'
 	},
 	{
 		id: 'covid19-dashboard',
@@ -139,7 +140,8 @@ export const projects = [
 		stack: ['Python', 'Plotly Dash', 'Pandas'],
 		url: 'https://github.com/KridtinC/covid19-dashboard',
 		hasDemo: true,
-		demoType: 'covid'
+		demoType: 'iframe',
+		demoUrl: 'https://covid19-dashboard-opzk.onrender.com/'
 	},
 	{
 		id: 'private',
@@ -149,6 +151,7 @@ export const projects = [
 		stack: [],
 		url: null,
 		hasDemo: false,
-		demoType: null
+		demoType: null,
+		demoUrl: null
 	}
 ];

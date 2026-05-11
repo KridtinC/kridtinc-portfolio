@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { projects } from '$lib/data';
-	import ProkedexDemo from './demos/ProkedexDemo.svelte';
-	import CovidDemo from './demos/CovidDemo.svelte';
+	import IframeDemo from './demos/IframeDemo.svelte';
 
 	let el: HTMLElement;
 	let hovered = $state<string | null>(null);
@@ -106,10 +105,8 @@
 					<div
 						class="mb-4 overflow-hidden rounded-lg animate-[demoSlide_0.35s_cubic-bezier(0.16,1,0.3,1)_forwards]"
 					>
-						{#if project.demoType === 'prokedex'}
-							<ProkedexDemo />
-						{:else if project.demoType === 'covid'}
-							<CovidDemo />
+						{#if project.demoType === 'iframe' && project.demoUrl}
+							<IframeDemo url={project.demoUrl} title={project.name} />
 						{/if}
 					</div>
 				{/if}
