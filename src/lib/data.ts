@@ -50,7 +50,7 @@ export const experience = [
 		role: 'Software Engineer',
 		period: 'Jul 2020 – Jun 2022',
 		location: 'Nonthaburi, TH · Hybrid',
-		url: 'https://kbtg.tech',
+		url: 'https://www.kbtg.tech',
 		bullets: [
 			'Implemented Centralized Back Office financial application for KBank users with various features',
 			'Designed databases and technical flows to meet business requirements with a focus on performance optimization',
