@@ -142,16 +142,5 @@ export const projects = [
 		hasDemo: true,
 		demoType: 'iframe',
 		demoUrl: 'https://covid19-dashboard-opzk.onrender.com/'
-	},
-	{
-		id: 'private',
-		num: '03',
-		name: 'Coming Soon',
-		description: 'A private project — details to be revealed.',
-		stack: [],
-		url: null,
-		hasDemo: false,
-		demoType: null,
-		demoUrl: null
 	}
 ];

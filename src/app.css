@@ -85,8 +85,11 @@ body {
 
 /* Accent button */
 .btn-green {
-	display: inline-block;
-	padding: 0.75rem 1.75rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.6rem 1.5rem;
 	border: 1px solid #f97316;
 	border-radius: 4px;
 	color: #f97316;
@@ -94,6 +97,7 @@ body {
 	font-size: 0.85rem;
 	letter-spacing: 0.08em;
 	text-decoration: none;
+	white-space: nowrap;
 	transition: background 0.2s, box-shadow 0.2s;
 }
 .btn-green:hover {

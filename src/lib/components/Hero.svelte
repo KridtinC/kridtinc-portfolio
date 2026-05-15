@@ -61,11 +61,11 @@
 				: 'opacity-0 translate-y-4'}"
 			style="transition-delay: 500ms;"
 		>
-			<button class="btn-green whitespace-nowrap" onclick={() => scrollTo('work')}>See my work</button>
+			<button class="btn-green" onclick={() => scrollTo('work')}>See my work</button>
 			<a
 				href="/resume.pdf"
 				download="Kridtin_Chawalratikool_Resume.pdf"
-				class="btn-green whitespace-nowrap inline-flex items-center gap-2"
+				class="btn-green"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 					<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
@@ -74,7 +74,7 @@
 			</a>
 			<a
 				href="mailto:{meta.email}"
-				class="btn-green whitespace-nowrap"
+				class="btn-green"
 				style="border-color: transparent; color: #aaaaaa;"
 			>
 				Get in touch →
