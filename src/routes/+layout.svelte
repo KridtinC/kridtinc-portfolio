@@ -6,6 +6,14 @@
 
 	let { children } = $props();
 
+	let mouseX = $state(0);
+	let mouseY = $state(0);
+
+	function handleMouseMove(e: MouseEvent) {
+		mouseX = e.clientX;
+		mouseY = e.clientY;
+	}
+
 	onMount(() => {
 		const link = document.createElement('link');
 		link.rel = 'stylesheet';
@@ -18,6 +26,7 @@
 <svelte:head>
 	<title>{meta.name} — Senior Software Engineer</title>
 	<meta name="description" content={meta.bio} />
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
@@ -43,7 +52,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 </svelte:head>
 
-<div class="relative min-h-screen">
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<div class="relative min-h-screen" onmousemove={handleMouseMove}>
+	<!-- Global cursor glow — fixed so it follows across all sections -->
+	<div
+		class="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
+		style="background: radial-gradient(600px at {mouseX}px {mouseY}px, rgba(249,115,22,0.05), transparent 70%);"
+	></div>
+
 	<Nav />
 	<div class="lg:flex">
 		<!-- Left sticky column (BC layout) -->
